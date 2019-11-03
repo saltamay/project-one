@@ -34,6 +34,14 @@ function initMap() {
 
 
 
+
+
+
+// var φ1 = lat1.toRadians(), φ2 = lat2.toRadians(), Δλ = (lon2-lon1).toRadians(), R = 6371e3; // gives d in metres
+// var d = Math.acos( Math.sin(φ1)*Math.sin(φ2) + Math.cos(φ1)*Math.cos(φ2) * Math.cos(Δλ) ) * R;
+
+
+
 const handleFirstQuestion = (e) => {
   userInfo.numOfBeds = e.dataset.value;
 
@@ -158,8 +166,9 @@ const handleFourthQuestion = (e) => {
   // if (userInfo.mostImportant === 'price') {
     
   // }
+  console.log(JSON.parse(localStorage.userInfo))
 
-  narrowByPrice(listings);
+  let list = narrowByPrice(listings);
   
   // displayresults()
 
@@ -242,12 +251,6 @@ const displayFirstQuestion = () => {
 };
 
 const narrowByPrice = (listings) => {
-  
-  // let listings = JSON.parse(localStorage.getItem('houseListing'));
-
-  // listings = listings.data.searchResults.mapResults;
-
-  // console.log(listings);
 
   const newListings = [];
 
@@ -260,7 +263,7 @@ const narrowByPrice = (listings) => {
       newListings.push(listing);
     }
   });
-  console.log(newListings);
+  console.log('narrowed By Price:',newListings);
   return newListings;
 }
 

@@ -1,4 +1,4 @@
-const data = [
+const subwayData = [
     {"name":"Downsview","latLong":{"latitude":"-79.462342744","longitude":"43.750053813"}},
     {"name":"Wilson","latLong":{"latitude":"-79.449928713","longitude":"43.734580620"}},
     {"name":"Yorkdale","latLong":{"latitude":"-79.447509462","longitude":"43.724813020"}},
@@ -30,5 +30,48 @@ const data = [
     {"name":"York Mills","latLong":{"latitude":"-79.405330677","longitude":"43.744995922"}},
     {"name":"Sheppard","latLong":{"latitude":"-79.410987148","longitude":"43.761674341"}}
     ,{"name":"North York Centre","latLong":{"latitude":"-79.412911598","longitude":"43.769241254"}},
-    {"name":"Finch","latLong":{"latitude":"-79.415672606","longitude":"43.781490124"}}
-]
+    {"name":"Finch","latLong":{"latitude":"-79.415672606","longitude":"43.781490124"}},
+    {
+      name: 'Kennedy',
+      latLong: { latitude: 43.73219165, longitude: -79.26569632 }
+    },
+    {
+      name: 'Lawrence East',
+      latLong: { latitude: 43.7502148, longitude: -79.27090721 }
+    },
+    {
+      name: 'Ellesmere',
+      latLong: { latitude: 43.76722615, longitude: -79.27731467 }
+    },
+    {
+      name: 'Midland',
+      latLong: { latitude: 43.77016839, longitude: -79.27248232 }
+    },
+    {
+      name: 'Scarborough Centre',
+      latLong: { latitude: 43.77384411, longitude: -79.25786316 }
+    },
+    {
+      name: 'McCowan',
+      latLong: { latitude: 43.77551255, longitude: -79.25154339 }
+    },
+    {
+      name: 'Sheppard-Yonge',
+      latLong: { latitude: 43.76161811, longitude: -79.41098864 }
+    },
+    {
+      name: 'Bayview',
+      latLong: { latitude: 43.76725222, longitude: -79.38739865 }
+    },
+    {
+      name: 'Bessarion',
+      latLong: { latitude: 43.76912679, longitude: -79.37672419 }
+    },
+    {
+      name: 'Leslie',
+      latLong: { latitude: 43.77113245, longitude: -79.36741635 }
+    },
+    {
+      name: 'Don Mills',
+      latLong: { latitude: 43.77556464, longitude: -79.34693642 }
+    }]
